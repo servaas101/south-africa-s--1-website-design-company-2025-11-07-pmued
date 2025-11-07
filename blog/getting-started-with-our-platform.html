@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest web design trends and best practices for 2024. Learn how professional web design impacts your business success.">
+    <meta name="keywords" content="web design trends, website design best practices, digital design, responsive design, South Africa">
+    <meta name="author" content="Elite Layouts">
+    <title>Web Design Trends 2024: The Complete Guide | Elite Layouts Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        
+        .feature-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-image {
+            transition: transform 400ms ease;
+        }
+        
+        .benefit-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .cta-button {
+            transition: all 300ms ease;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .testimonial-card {
+            transition: all 300ms ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .faq-item {
+            transition: all 300ms ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            opacity: 1;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 300ms ease;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .announcement-bar {
+            animation: slideDown 500ms ease-out;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 300ms ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #1f2937;
+            transition: width 300ms ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .blog-content h2 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-content h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #374151;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-content p {
+            color: #4b5563;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .blog-content ul, .blog-content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-content li {
+            color: #4b5563;
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        .blog-content strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Announcement Bar -->
+    <div class="announcement-bar bg-gradient-to-r from-gray-900 to-gray-800 text-white py-3 px-4 text-center text-sm font-medium">
+        <i class="fas fa-shipping-fast mr-2"></i>Fast Worldwide Shipping (5 days delivery) | 100% Satisfaction Guarantee
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued" class="text-2xl font-bold text-gray-900 hover:text-gray-700 transition duration-300">
+                        <i class="fas fa-code text-blue-600 mr-2"></i>Elite Layouts
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued/blog.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">
+                        ← Back
+                    </a>
+                </nav>
+
+                <!-- Desktop Right Section -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="p-2 rounded-lg hover:bg-gray-100 transition duration-300">
+                        <i class="fas fa-search text-gray-700 text-lg"></i>
+                    </button>
+                    <a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued" class="cta-button bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition duration-300">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden p-2 rounded-lg hover:bg-gray-100 transition duration-300">
+                    <i class="fas fa-bars text-2xl text-gray-900"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <nav class="mobile-menu hidden md:hidden pb-4 border-t border-gray-200">
+                <a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued/blog.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-300 font-medium">← Back</a>
+                <div class="px-4 pt-3">
+                    <a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued" class="cta-button block w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold text-center transition duration-300">
+                        Get Started
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <article class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <!-- Blog Header -->
+            <div class="mb-8">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Web Design</span>
+                    <span class="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">Industry Trends</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Web Design Trends 2024: The Complete Guide to Modern Digital Excellence
+                </h1>
+                <div class="flex items-center gap-4 text-gray-600">
+                    <span class="flex items-center">
+                        <i class="fas fa-calendar-alt mr-2 text-blue-600"></i>
+                        December 2024
+                    </span>
+                    <span class="flex items-center">
+                        <i class="fas fa-clock mr-2 text-blue-600"></i>
+                        8 min read
+                    </span>
+                    <span class="flex items-center">
+                        <i class="fas fa-user mr-2 text-blue-600"></i>
+                        Elite Layouts Team
+                    </span>
+                </div>
+            </div>
+
+            <!-- Featured Image -->
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&h=675&fit=crop&q=80" alt="Modern web design interface showing responsive design and user experience principles" class="w-full rounded-lg shadow-lg mb-12 object-cover">
+
+            <!-- Blog Content -->
+            <div class="blog-content prose prose-lg max-w-none">
+                <p>
+                    The digital landscape continues to evolve at an unprecedented pace, and web design is at the forefront of this transformation. As we navigate through 2024, businesses across South Africa and globally are discovering that a stunning website is no longer just a nice-to-have—it's an absolute necessity for success. The way we design websites has fundamentally changed, driven by new technologies, shifting user expectations, and the increasing importance of digital presence in driving business growth.
+                </p>
+
+                <p>
+                    Whether you're a startup looking to make your mark or an established business ready to modernize your online presence, understanding the latest web design trends is crucial. At Elite Layouts, we've spent the last decade observing and implementing cutting-edge design practices that deliver real results for our clients. In this comprehensive guide, we'll explore the web design trends that are shaping 2024 and beyond, helping you understand what modern, effective web design looks like in today's competitive marketplace.
+                </p>
+
+                <h2>1. Minimalism and Clean Design Continue to Dominate</h2>
+
+                <p>
+                    One of the most persistent and powerful trends in web design is minimalism. Rather than cluttering pages with unnecessary elements, leading designers in 2024 are embracing the principle of "less is more." Clean, minimalist design isn't just aesthetically pleasing—it's functionally superior. It reduces cognitive load, improves page loading speeds, and creates a more professional appearance that builds trust with visitors.
+                </p>
+
+                <p>
+                    Minimalist design focuses on essential elements, generous whitespace, and strategic use of typography and color. This approach allows your content and calls-to-action to shine, making it easier for visitors to understand your message and take desired actions. South African businesses are increasingly adopting this approach, recognizing that a clean website often converts better than one filled with competing elements. The beauty of minimalism is that it works across all device sizes, from large desktop screens to mobile phones, creating a consistent and professional user experience everywhere.
+                </p>
+
+                <h2>2. Dark Mode and Advanced Color Palettes</h2>
+
+                <p>
+                    Dark mode has evolved from a novelty feature to a standard expectation in modern web design. Users appreciate the reduced eye strain, improved battery life on mobile devices, and the sophisticated aesthetic that dark interfaces provide. In 2024, leading websites are implementing dark mode as a default option or automatically adapting to user system preferences.
+                </p>
+
+                <p>
+                    Beyond dark mode, designers are experimenting with sophisticated color palettes that go beyond traditional primary colors. We're seeing the rise of earthy tones, gradient overlays, and carefully curated color combinations that create visual interest while maintaining accessibility standards. The key is ensuring sufficient contrast for readability while creating an emotionally engaging visual experience. These advanced color strategies help brands stand out while maintaining the professionalism and credibility that South African businesses require.
+                </p>
+
+                <h2>3. Responsive and Mobile-First Design</h2>
+
+                <p>
+                    Mobile-first design isn't new, but its importance has only grown in 2024. With over 70% of web traffic now coming from mobile devices, designing for mobile first isn't optional—it's mandatory. This means starting the design process with the mobile experience and then progressively enhancing it for larger screens, rather than the reverse.
+                </p>
+
+                <p>
+                    Responsive design has become the baseline expectation. Websites must seamlessly adapt to any screen size, from tiny smartwatches to large desktop monitors. This requires flexible layouts, scalable images, and touch-friendly interface elements. Elite Layouts ensures every website we create provides an optimal experience on every device. This commitment to responsive design directly impacts your search engine rankings, as Google prioritizes mobile-friendly websites in its search results—a crucial factor for businesses looking to attract local customers in South Africa.
+                </p>
+
+                <h2>4. Micro-Interactions and Animation</h2>
+
+                <p>
+                    Subtle animations and micro-interactions have become essential elements of modern web design. These small, purposeful animations—like button hover effects, scroll-triggered animations, or loading states—serve multiple purposes. They provide visual feedback to users, guide attention to important elements, and create a more engaging, interactive experience that feels polished and professional.
+                </p>
+
+                <p>
+                    The key to successful micro-interactions is subtlety. Animations should enhance the user experience without becoming distracting or slowing down page performance. When implemented correctly, these elements make websites feel more responsive and alive, encouraging users to explore further and spend more time engaging with your content. This increased engagement often translates directly into higher conversion rates and improved business outcomes.
+                </p>
+
+                <h2>5. Accessibility and Inclusive Design</h2>
+
+                <p>
+                    Accessibility has moved from being a "nice-to-have" to an essential requirement in 2024. Inclusive design ensures that websites are usable by everyone, including people with disabilities. This includes proper color contrast ratios, keyboard navigation support, alt text for images, and semantic HTML structure that works well with screen readers.
+                </p>
+
+                <p>
+                    Beyond the ethical imperative, accessible design is also good for business. It expands your potential audience, improves search engine optimization, and often results in better overall design practices. South African businesses that prioritize accessibility demonstrate a commitment to serving all their customers, which builds brand loyalty and positive reputation. Additionally, accessibility compliance helps protect your business from potential legal issues related to discrimination.
+                </p>
+
+                <h2>6. Typography as a Design Element</h2>
+
+                <p>
+                    Typography has become increasingly important in modern web design. Rather than relegating fonts to a supporting role, designers in 2024 are using typography as a primary design element. Bold, expressive typefaces are being paired with carefully chosen secondary fonts to create visual hierarchy and personality.
+                </p>
+
+                <p>
+                    Variable fonts are gaining popularity, allowing designers to use a single font file with multiple weights and styles, reducing page load times while providing more design flexibility. The strategic use of typography helps establish brand identity, improve readability, and create a more memorable user experience. When combined with generous whitespace and minimalist design principles, thoughtful typography can make a website feel premium and professional.
+                </p>
+
+                <h2>7. AI-Powered Personalization</h2>
+
+                <p>
+                    Artificial intelligence is revolutionizing how websites interact with visitors. AI-powered personalization allows websites to adapt content, product recommendations, and user experiences based on individual visitor behavior and preferences. This technology enables websites to deliver more relevant experiences to each visitor, significantly improving engagement and conversion rates.
+                </p>
+
+                <p>
+                    From chatbots that provide instant customer support to recommendation engines that suggest relevant products or content, AI is making websites smarter and more responsive to user needs. For South African businesses, implementing AI-powered features can provide a competitive advantage, allowing you to deliver personalized experiences that larger international competitors might not have localized for the South African market.
+                </p>
+
+                <h2>8. Performance Optimization and Core Web Vitals</h2>
+
+                <p>
+                    Website performance is no longer just about user experience—it's a critical ranking factor for search engines. Google's Core Web Vitals, which measure loading performance, interactivity, and visual stability, have become central to SEO strategy. In 2024, optimizing for these metrics is essential for maintaining search visibility.
+                </p>
+
+                <p>
+                    This includes optimizing image sizes, implementing lazy loading, minimizing code, and leveraging content delivery networks. Fast-loading websites provide better user experiences, reduce bounce rates, and improve conversion rates. For businesses in South Africa, where internet speeds can vary, performance optimization is particularly important for ensuring your website loads quickly for all visitors, regardless of their connection speed.
+                </p>
+
+                <h2>9. Integration with Social Commerce</h2>
+
+                <p>
+                    The line between social media and e-commerce continues to blur in 2024. Websites are increasingly integrating with social platforms, allowing users to shop directly from social media feeds or easily share products with their networks. This trend reflects the growing importance of social platforms in the customer journey.
+                </p>
+
+                <p>
+                    For South African businesses, leveraging social commerce can open new sales channels and reach customers where they're already spending time. Integration with platforms like Instagram Shopping, Facebook Marketplace, and TikTok Shop can significantly expand your market reach and create additional revenue streams.
+                </p>
+
+                <h2>10. Voice Search Optimization</h2>
+
+                <p>
+                    With the increasing prevalence of voice assistants and smart speakers, optimizing for voice search has become important. This involves structuring content to answer common questions concisely, using natural language, and implementing schema markup that helps search engines understand your content better.
+                </p>
+
+                <p>
+                    Voice search optimization requires a different approach than traditional keyword optimization. Instead of targeting short keywords, you should focus on conversational phrases and questions that users are likely to ask. For local businesses in South Africa, voice search optimization can be particularly valuable for capturing "near me" searches and location-specific queries.
+                </p>
+
+                <h2>Implementing These Trends for Your Business</h2>
+
+                <p>
+                    Understanding these trends is one thing; implementing them effectively is another. Not every trend is appropriate for every business, and the most successful websites are those that thoughtfully adapt trends to align with their specific brand identity and business goals. The key is to focus on trends that enhance user experience and support your business objectives, rather than implementing trends simply because they're popular.
+                </p>
+
+                <p>
+                    At Elite Layouts, we combine our deep understanding of these trends with our knowledge of the South African market to create websites that are both modern and effective. We don't just chase trends—we implement them strategically to deliver websites that look stunning, perform excellently, and drive real business results for our clients.
+                </p>
+
+                <h2>Conclusion: The Future of Web Design</h2>
+
+                <p>
+                    The web design landscape in 2024 is characterized by a focus on user experience, performance, and accessibility. The trends we've explored—from minimalism and dark mode to AI-powered personalization and voice search optimization—reflect a fundamental shift toward creating websites that serve user needs while delivering business value.
+                </p>
+
+                <p>
+                    Whether you're planning a new website or updating an existing one, now is the time to embrace these modern design principles. A well-designed website that reflects current best practices will give your South African business a competitive advantage, improve your search engine visibility, and create a foundation for sustainable growth. Ready to transform your online presence? Contact Elite Layouts today to discuss how we can bring these trends to life for your business.
+                </p>
+            </div>
+
+            <!-- Author Info -->
+            <div class="mt-12 pt-8 border-t border-gray-200">
+                <div class="flex items-center gap-4">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Elite Layouts Team</h3>
+                        <p class="text-gray-600">
+                            Our team of experienced web designers and developers are passionate about creating digital solutions that drive business growth. We combine industry expertise with local market knowledge to deliver websites that work for South African businesses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="mt-16 pt-12 border-t border-gray-200">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Related Articles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                        <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold mb-3">Mobile Design</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Why Mobile-First Design is Essential for Your Business</h3>
+                            <p class="text-gray-600 mb-4">Learn why designing for mobile first is crucial for success in today's digital landscape.</p>
+                            <a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued/blog.html" class="text-blue-600 font-semibold hover:text-blue-700 transition duration-300">
+                                Read More <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                        <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold mb-3">Conversion</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">How Good Web Design Increases Conversion Rates</h3>
+                            <p class="text-gray-600 mb-4">Discover the design principles that turn website visitors into paying customers.</p>
+                            <a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued/blog.html" class="text-blue-600 font-semibold hover:text-blue-700 transition duration-300">
+                                Read More <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="mt-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-8 md:p-12 text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Ready to Modernize Your Website?</h2>
+                <p class="text-blue-100 mb-8 text-lg">
+                    Let our team of expert designers help you implement these trends and create a website that drives real business results.
+                </p>
+                <a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued" class="cta-button inline-flex items-center bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-bold transition duration-300">
+                    Get Your Free Consultation
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4 flex items-center">
+                        <i class="fas fa-code text-blue-400 mr-2"></i>Elite Layouts
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                        South Africa's #1 website design company, creating stunning digital experiences that drive business growth.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued#home" class="text-gray-400 hover:text-blue-400 transition duration-300">Home</a></li>
+                        <li><a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued#features" class="text-gray-400 hover:text-blue-400 transition duration-300">Features</a></li>
+                        <li><a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued#benefits" class="text-gray-400 hover:text-blue-400 transition duration-300">Benefits</a></li>
+                        <li><a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued#about" class="text-gray-400 hover:text-blue-400 transition duration-300">About Us</a></li>
+                        <li><a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued#testimonials" class="text-gray-400 hover:text-blue-400 transition duration-300">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">Web Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">Hosting & Domains</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">SEO Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued/blog.html" class="text-gray-400 hover:text-blue-400 transition duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-blue-400 transition duration-300">Terms of Service</a></li>
+                        <li><a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued#contact" class="text-gray-400 hover:text-blue-400 transition duration-300">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 py-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2024 Elite Layouts. All rights reserved. | Crafted with <i class="fas fa-heart text-red-500"></i> in South Africa
+                    </p>
+                    <div class="flex justify-start md:justify-end gap-6 text-sm">
+                        <a href="privacy.html" class="text-gray-400 hover:text-blue-400 transition duration-300">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-blue-400 transition duration-300">Terms of Service</a>
+                        <a href="https://servaas101.github.io/south-africa-s--1-website-design-company-2025-11-07-pmued/blog.html" class="text-gray-400 hover:text-blue-400 transition duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Policies Info -->
+            <div class="mt-8 pt-8 border-t border-gray-800 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="text-gray-400 text-sm flex items-start">
+                    <i class="fas fa-shipping-fast text-blue-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">Fast Worldwide Shipping:</strong> 5 days delivery on all orders</span>
+                </div>
+                <div class="text-gray-400 text-sm flex items-start">
+                    <i class="fas fa-undo text-blue-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">100% Satisfaction Guarantee:</strong> Full refund upon return</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
